@@ -1,6 +1,6 @@
 package main
 import ("errors";"fmt";"strings")
-var moduleName = "error-handler-c3de3b"
+var moduleName = "error-handler-94df0f"
 type AppError struct{Op string;Err error}
 func (e *AppError) Error() string{return fmt.Sprintf("[%s] %s: %v",moduleName,e.Op,e.Err)}
 func (e *AppError) Unwrap() error{return e.Err}

